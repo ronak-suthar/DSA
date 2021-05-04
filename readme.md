@@ -1,7 +1,7 @@
 # **Data Structures & Algorithms Repo**
-![](images/dsa_img.jpg)
-## I have created this repo to continously keep track of my DSA Learning
-## and Easily refer it when ever i want from any were.
+![](https://github.com/ronak-suthar/DSA/blob/master/images/dsa_img.jpeg)
+## I have created this Repo to continously keep track of my DSA Learning
+## And Easily Refer it When Ever i Want it & From Any Were.
 ## Also to get more practice of Git and Github
 
 ### Table of contents
