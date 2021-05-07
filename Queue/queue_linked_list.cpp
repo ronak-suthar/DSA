@@ -17,6 +17,7 @@ class queue : private node{
     private:
     node* front=NULL;
     node* rear=NULL;
+    node* temp=NULL;
 
     public:
 
@@ -43,15 +44,16 @@ class queue : private node{
         }
     }
     void dequeue(void){
-        if(front==rear){
+		if(is_empty()){
+			return;
+		}
+        else if(front==rear && front!=NULL && rear!=NULL){
             delete front;
-            delete rear;
-
-            front=NULL;
-            rear=NULL;
+			front=NULL;
+			rear=NULL;
         }
-        else if(!is_empty()){
-            node* temp=front;
+        else{
+            temp=front;
 
             front=front->next;
 
@@ -60,7 +62,13 @@ class queue : private node{
     }
 
     void view(void){
-        node* temp=front;
+        temp=front;
+
+		if(temp==NULL){
+			return;
+		}
+
+        temp=front;
 
         cout<<"\n ! Front <<<<----- |";
         while(temp!=NULL){
@@ -120,6 +128,6 @@ int main(void){
     Front : 30
     Rear : 60
     */
-   
+
     return 0;
 }
