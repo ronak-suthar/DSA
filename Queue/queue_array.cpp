@@ -104,7 +104,27 @@ int main(void){
     data.view();
 
     data.view_front();
-    data.view_rear();;
+    data.view_rear();
+
+    /* Corresponding Output
+
+    Enqueueing 10,20,30,40,50,60
+
+    The Queue is Empty !
+    Viewing the data stored
+
+    ! Front <<<<----- | 10 | 20 | 30 | 40 | 50 | 60 | <<<<<-----Rear |
+
+    Dequeueing two elements
+
+    ! Front <<<<----- | 30 | 40 | 50 | 60 | <<<<<-----Rear |
+
+    Front : 30
+    
+    Rear : 60
+
+    */
+
 
 
     return 0;
