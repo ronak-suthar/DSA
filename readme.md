@@ -9,6 +9,8 @@
 
 ### Table of contents
 
+- Mathematics
+- Bitwise Operators
 - Linked List
     - Singly Linked List
     - Doubly Linked List
@@ -20,5 +22,6 @@
 - Queue
     - Using Circular Array
     - Using Linked List
+
 
 
