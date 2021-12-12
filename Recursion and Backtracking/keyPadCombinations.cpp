@@ -37,16 +37,33 @@ vector<string> keypad(string input, const vector<string> &keys)
     return result;
 }
 
+void printkeyPadCombination(string input,string output,const vector<string>& keys){
+    if(input.size()==0){
+        cout<<output<<"\n";
+        return;
+    }
+
+    string currInput = keys[(int)(input[0]-'0')];
+
+    //cout<<currInput<<"\n";
+
+    for(char ele:currInput){
+        printkeyPadCombination(input.substr(1),output+ele,keys);
+    }
+}
+
 int main(void)
 {
     vector<string> keys{",;", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tu", "vwx", "yz"};
 
-    vector<string> result = keypad("573", keys);
+    // vector<string> result = keypad("573", keys);
 
-    for(string ele:result){
-        cout<<ele<<" ,";
-    }
-    cout<<"\n";
+    // for(string ele:result){
+    //     cout<<ele<<" ,";
+    // }
+    // cout<<"\n";
+
+    printkeyPadCombination("56893","",keys);
 
     return 0;
 }
